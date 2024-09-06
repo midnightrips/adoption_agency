@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title%}Pet Details{% endblock %}
+
+{% block content %}
+<h1>Pet Information</h1>
+<div>
+    <b>{{pet.name}}</b>
+    <p>{{pet.species}}</p>
+    <p>{{pet.age}}</p>
+    {{pet.photo_url}}
+</div>
+{% endfor %}
+<form action="/add">
+    <button>Add a Pet</button>
+</form>
+{% endblock %}
